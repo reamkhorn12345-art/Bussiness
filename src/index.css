@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", sans-serif;
+  
+  --color-primary: #137fec;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+  
+  body {
+    @apply bg-background-light text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-full bg-primary px-8 py-4 text-sm font-bold text-white transition-transform hover:scale-105 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply rounded-full bg-white/10 backdrop-blur-md px-8 py-4 text-sm font-bold text-white hover:bg-white/20 transition-colors;
+  }
+}
