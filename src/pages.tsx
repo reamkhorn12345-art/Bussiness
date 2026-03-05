@@ -248,7 +248,7 @@ export const AboutPage: React.FC = () => (
         <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
         <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
         <img 
-          src="src/public/R1.png" 
+          src="/R1.png" 
           alt="About Me" 
           className="relative z-10 rounded-3xl shadow-2xl w-full aspect-[4/5] object-cover"
           referrerPolicy="no-referrer"
